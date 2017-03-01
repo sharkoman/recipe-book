@@ -1,0 +1,6 @@
+<h1>
+  {{selectedRecipe?.title}}
+</h1>
+<div>
+  <img *ngIf="selectedRecipe?.imagePath" [src]="selectedRecipe?.imagePath" alt="image">
+</div>

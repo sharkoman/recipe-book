@@ -6,6 +6,8 @@
 
 <div class="list-group">
 
-  <rb-recipe-list-item [recipe]="recipe"></rb-recipe-list-item>
+  <rb-recipe-list-item 
+    class="list-group-item" (click)="selectedRecipe(recipe)" 
+    *ngFor="let recipe of recipes" [recipe]="recipe"></rb-recipe-list-item>
 
 </div>
